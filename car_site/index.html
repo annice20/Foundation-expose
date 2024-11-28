@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My car</title>
     <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="font/css/all.css" type="text/css">
 </head>
 <body>
     <!-- NAVIGATION BAR DEBUT -->
@@ -16,7 +17,7 @@
     <div class="top-bar" id="example-menu" data-options="marginTop:0;" data-sticky>
         <div class="top-bar-left">
             <ul class="dropdown menu" data-dropdown-menu>
-                <li class="menu-text">My Car</li>
+                <li class="menu-text">My<span style="color: green;">Car</span></li>
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#about">A propos</a></li>
                 <li><a href="#" data-open="exampleModal1">Contact</a></li>
@@ -31,7 +32,7 @@
     </div>
     <!-- NAVIGATION BAR FIN -->
 
-    <!-- CAROUSEL DEBUT -->
+    <!-- SLIDE DEBUT -->
     <div id="accueil" class="orbit" role="region" aria-label="Image slider" data-orbit>
         <ul class="orbit-container">
           <li class="orbit-slide">
@@ -46,8 +47,7 @@
           <button class="orbit-next">Suivant</button>
         </nav>
     </div>
-      
-    <!-- CAROUSEL FIN -->
+    <!-- SLIDE FIN -->
 
     <!-- MODAL DEBUT -->
     <div class="reveal" id="exampleModal1" data-reveal>
@@ -63,7 +63,7 @@
                     </div>
                 </div>
                 <textarea placeholder="Message"></textarea>
-                <a class="button primary" href="#">Primary</a>
+                <a class="button primary" href="#">OK</a>
             </div>
         </form>
         <button class="close-button" data-close aria-label="Close modal" type="button">
@@ -72,9 +72,9 @@
     </div>
     <!-- MODAL FIN -->
 
-    <div class="callout large">
+    <div id="about" class="callout large">
         <!-- CARD DEBUT -->
-        <div id="about" class="grid-container">
+        <div class="grid-container">
             <h1>Voitures</h1>
             <div class="grid-x grid-margin-x small-up-2 medium-up-3">
                 <div class="cell">
@@ -135,6 +135,40 @@
         </div>
         <!-- CARD FIN -->
     </div>
+
+    <!-- Footer -->
+    <footer class="footer" style="background-color: rgba(128, 128, 128, 0.315);">
+        <br>
+        <div class="grid-container">
+            <div class="grid-x grid-margin-x">
+                <div class="cell large-4 medium-6 small-12">
+                    <h5>Contact</h5>
+                    <address>
+                        <p><i class="fa fa-fw fa-envelope"></i> Email: mycar@gmail.com</p>
+                        <p><i class="fa fa-phone"></i> Phone: +261 34 59 539 01</p>
+                    </address>
+                </div>
+                <div class="cell large-4 medium-6 small-12">
+                    <h5>Qui sommes-nous ?</h5>
+                    <p>Nous sommes spécialisé dans la vente de voiture, alors n'hesitez-pas à visiter ce petit coin de paradis pour chercher la voiture de vos rêves.</p>
+                </div>
+                <div class="cell large-4 medium-6 small-12">
+                    <h5>Suivez-nous</h5>
+                    <ul class="menu horizontal">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid-x grid-margin-x">
+                <div class="cell text-center">
+                    <p>&copy; 2024 - Tous droits réservés</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
